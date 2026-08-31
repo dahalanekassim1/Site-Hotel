@@ -15,6 +15,7 @@ body {
     color: var(--blanc);
     line-height: 1.25;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--blan-c);
 }
 
 /* POUR LA PARTIE DU BAR NAVIGARION */
@@ -50,7 +51,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: center;
     flex-direction: row;
     gap: 20px;
 }
@@ -188,7 +188,13 @@ h1 {
 
 
 @media (max-width : 768px) {
-    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 20px 15px;
+    }
     .btn-toggler {
         display: flex;
     }
@@ -207,3 +213,99 @@ h1 {
     }
 }
 
+.chambre {
+    margin-top: 0;
+}
+
+/* POUR LA SECTION CHAMBRE */
+h2 {
+    color: var(--black);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.chambre .bar {
+    display: block;       
+    width: 80px;           
+    height: 5px;
+    background: #111;
+    margin: 0 auto 30px;
+}
+.container-Chambre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 90px;
+}
+
+.container-Chambre .block {
+    margin: 20px;
+    box-shadow: 0 0 20px #c6c5c5;
+    border-radius: 5px;
+}
+
+.container-Chambre .block:hover {
+    transform: translateY(-5px);
+    transition: all .6s ease;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.chambre-item {
+    color: var(--black);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.title-items {
+    color: var(--black);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.description {
+    font-size: 1rem;
+    color: #737171;
+    margin-bottom: 15px;
+}
+
+.chambre-item .prix {
+    color: var(--dark-d);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.chambre-item button {
+    padding: 10px;
+    width: auto;
+    background-color: #24345a;
+    color: var(--blanc);
+    border: none;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.chambre-item button:hover {
+    background: #1a2442;
+    color: var(--blanc);
+    transition: all .6s ease;
+}
+
+@media (max-width : 988px) {
+    .container-Chambre {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+}
