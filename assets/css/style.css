@@ -18,6 +18,13 @@ body {
     color: var(--blan-c);
 }
 
+html {
+    scroll-behavior: smooth;  
+}
+section {
+    scroll-margin-top: 100px;
+}
+
 /* POUR LA PARTIE DU BAR NAVIGARION */
 header {
     display: flex;
@@ -129,37 +136,33 @@ header {
 
 .container-accueil .para1 {
     font-size: 1.3rem;
-    color: #b8b5b5;
-    
+    color: #b8b5b5;   
     font-family: Arial, sans-serif;
 }
 
-.btn-accueil a {
+.container-accueil .btn {
+    background: var(--dark-d);
+    width: 25%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.container-accueil .btn:hover {
+    background: #937708;
+    color: #fff;
+    transform: translateX(2px);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn a {
     text-decoration: none;
     color: var(--blanc);
     font-size: 1.2rem;
     font-weight: bold;
-}
-.container-accueil .btn-accueil {
-    margin-top: 25px;
-    width: 30%;
-}
-.container-accueil button {
-    padding: 15px 0;
-   background: var(--dark-d);
-   color: var(--blanc);
-    border: none;
     cursor: pointer;
-    width: 20%;
-    border-radius: 5px;
-}
-
-.container-accueil button:hover {
-    cursor: pointer;
-    transform: translateX(2px);
-    transition: all .3s;
-    background: #937708;
-    color: #fff;
 }
 
 @media (max-width : 768px) {
@@ -176,7 +179,7 @@ header {
     .navbar ul {
         display: none;
     }
-    .btn .btn-accueil {
+    .container-accueil .btn {
         width: 100%;
     }
 }
