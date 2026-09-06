@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#accueil" class="link active">Accueil</a></li>
                 <li><a href="#chambre" class="link">Chambre</a></li>
-                <li><a href="" class="link">Réservation</a></li>
+                <li><a href="#reservation" class="link">Réservation</a></li>
                 <li><a href="" class="link">Contact</a></li>
             </ul>
         </nav>
@@ -36,9 +36,9 @@
                 <h1 class="titre">Bienvenue au <br> <strong class="hotel">Grand hotel</strong></h1>
 
                 <p class="para1"> L'alliance parfaite de l'élégance et de la sérénité <br>
-                     au cœur de votre séjour. Laissez-vous séduire par nos chambres <br>
-                     et vivez une expérience unique. 
-                </p>             
+                    au cœur de votre séjour. Laissez-vous séduire par nos chambres <br>
+                    et vivez une expérience unique.
+                </p>
             </div>
 
             <div class="btn">
@@ -61,7 +61,8 @@
 
                     <div class="chambre-item">
                         <p class="title-items"> Chambre Standard</p>
-                        <p class="description">Un cocon douillet et moderne, idéal pour un séjour confortable en toute simplicité.</p>
+                        <p class="description">Un cocon douillet et moderne, idéal pour un séjour confortable en toute
+                            simplicité.</p>
 
                         <P class="prix">A partir de 150€ / nuit</p>
                         <div class="btn">
@@ -77,7 +78,8 @@
 
                     <div class="chambre-item">
                         <p class="title-items">Chambre de Luxe</p>
-                        <p class="description">Spacieuse et élégante, elle vous offre une vue imprenable et un confort absolu.</p>
+                        <p class="description">Spacieuse et élégante, elle vous offre une vue imprenable et un confort
+                            absolu.</p>
 
                         <p class="prix">A partir de 320€ / nuit</p>
                         <div class="btn">
@@ -93,7 +95,8 @@
 
                     <div class="chambre-item">
                         <p class="title-items"> Suite Exécutive</p>
-                        <p class="description">Un espace raffiné disposant d'un salon privé et de prestations haut de gamme.</p>
+                        <p class="description">Un espace raffiné disposant d'un salon privé et de prestations haut de
+                            gamme.</p>
 
                         <p class="prix">A partir de 650€ / nuit</p>
                         <div class="btn">
@@ -109,7 +112,8 @@
 
                     <div class="chambre-item">
                         <p class="title-items"> Suite Familiale</p>
-                        <p class="description">Un grand espace chaleureux conçu pour accueillir toute la famille dans le plus grand confort.</p>
+                        <p class="description">Un grand espace chaleureux conçu pour accueillir toute la famille dans le
+                            plus grand confort.</p>
                         <p class="prix">A partir de 700€ / nuit</p>
                         <div class="btn">
                             <button>Réserver</button>
@@ -124,7 +128,8 @@
 
                     <div class="chambre-item">
                         <p class="title-items"> Suite avec Jacuzzi</p>
-                        <p class="description">Équipée d'un bain à remous privé, idéale pour un moment de détente absolue à deux.</p>
+                        <p class="description">Équipée d'un bain à remous privé, idéale pour un moment de détente
+                            absolue à deux.</p>
 
                         <p class="prix">A partir de 800€ / nuit</p>
                         <div class="btn">
@@ -140,7 +145,8 @@
 
                     <div class="chambre-item">
                         <p class="title-items"> Suite Présidentielle</p>
-                        <p class="description">Le summum du luxe avec vue panoramique, prestations VIP et service sur mesure.</p>
+                        <p class="description">Le summum du luxe avec vue panoramique, prestations VIP et service sur
+                            mesure.</p>
 
                         <p class="prix">A partir de 1000€ / nuit</p>
                         <div class="btn">
@@ -153,7 +159,72 @@
         </div>
     </section>
 
-    
+    <section class="reservation" id="reservation">
+        <div class="container-reser">
+            <h3 style="color: black;">Réserver une chambre</h3>
+            <span class="bar"></span>
+
+            <form action="" class="form-block">
+                <div class="group-champ">
+                    <div class="block1">
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="" class="group">Nom complet</label>
+                                <input class="champ" type="text" placeholder="Nom complet" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="group">Date d'arriver</label>
+                                <input class="champ" type="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="group">Type de chambre</label>
+                                <select class="champ">
+                                    <option value="">choisir une chambre</option>
+                                    <option value="">Chambre Standard</option>
+                                    <option value="">Chambre de Luxe</option>
+                                    <option value="">Suite Exécutive</option>
+                                    <option value="">Suite Familiale</option>
+                                    <option value="">Suite avec Jacuzzi</option>
+                                    <option value="">Suite Présidentielle</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="" class="group">E-amil</label>
+                                <input type="email" class="champ" placeholder="E-mail" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="group"> Date de départ</label>
+                                <input type="date" class="champ" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="group">Nombre de Personne</label>
+                                <select name="" class="champ" id="" required>
+                                    <option value="">1 personne</option>
+                                    <option value="">2 personnes</option>
+                                    <option value="">3 personnes</option>
+                                    <option value="">+4 personne</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="btn">Réserver maintenant</button>
+                    </div>
+
+                    <div class="block2">
+                        <img src="./assets/images/img1.jpg" alt="iimage en cours">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
 
 </body>
 
